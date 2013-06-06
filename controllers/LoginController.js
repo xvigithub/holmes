@@ -1,6 +1,6 @@
 ﻿angular.module('HolmesApp')
-    .controller('LoginController', function ($scope) {
+    .controller('LoginController', function ($scope, $location) {
         $scope.login = function () {
-            window.alert('hello');
+            $location.path('/tasks');
         };
     });

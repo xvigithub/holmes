@@ -1,1 +1,4 @@
-﻿
+﻿<div ng-repeat="task in tasks" style="border: 1px solid gray" ng-click="selectTask(task.id)">
+    <h1>{{task.applicantName}}</h1>
+    <h3>{{task.address}}</h3>
+</div>

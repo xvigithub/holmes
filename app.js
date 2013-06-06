@@ -9,7 +9,7 @@
             templateUrl: 'partials/login.html'
         })
         .when('/tasks', {
-            controller: 'TasksListController',
+            controller: 'TaskListController',
             templateUrl: 'partials/tasklist.html'
         })
         .when('/tasks/:taskId', {
