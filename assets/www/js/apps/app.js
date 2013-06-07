@@ -6,14 +6,14 @@
         $routeProvider
         .when('/', {
             controller: 'LoginController',
-            templateUrl: 'partials/login.html'
+            templateUrl: 'login.html'
         })
         .when('/tasks', {
             controller: 'TaskListController',
-            templateUrl: 'partials/tasklist.html'
+            templateUrl: 'tasklist.html'
         })
         .when('/tasks/:taskId', {
             controller: 'TaskDetailController',
-            templateUrl: 'partials/taskdetail.html'
+            templateUrl: 'taskdetail.html'
         });
     });
