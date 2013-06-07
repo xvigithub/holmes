@@ -1,0 +1,19 @@
+﻿/* Animation */
+.animate-enter
+{
+	-webkit-transition: 0.15s linear all; /* Safari/Chrome */
+	-moz-transition: 0.15s linear all; /* Firefox */
+	-o-transition: 0.15s linear all; /* Opera */
+	transition: 0.15s linear all; /* Future Browsers */
+	/* The animation preparation code */
+	opacity: 0;
+	left: 40px;
+	position: relative;
+}
+
+	.animate-enter.animate-enter-active
+	{
+		/* The animation code itself */
+		opacity: 1;
+		left: 0;
+	}
