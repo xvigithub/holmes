@@ -1,4 +1,19 @@
-﻿<div ng-repeat="task in tasks" style="border: 1px solid gray" ng-click="selectTask(task.id)">
-    <h1>{{task.applicantName}}</h1>
-    <h3>{{task.address}}</h3>
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li style="padding-left:10px;"><button class="btn btn-info"><i class="icon-th-large"></i></button></li>
+        </ul>
+        <ul class="nav pull-right">
+            <li style="padding-right:10px;"><button class="btn btn-info" ng-click="signOut()"><i class="icon-home"></i></button></li>
+        </ul>
+    </div>
+</nav>
+<br />
+<br />
+<div ng-repeat="task in tasks" style="border-bottom: 1px solid gray; background-color: lightcyan" ng-click="selectTask(task.id)">
+    <span style="margin-left: 10px; margin-top: 50px;">
+        <span class="badge {{task.color}}">&nbsp;</span>
+        <h1>{{task.applicantName}}</h1>
+        <h3>{{task.address}}</h3>
+    </span>
 </div>

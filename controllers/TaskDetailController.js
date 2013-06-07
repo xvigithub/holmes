@@ -16,6 +16,10 @@
         });
     }
 
+    $scope.start = function () {
+        $('#myModal').modal('show');
+    };
+
     $scope.back = function () {
         window.history.back();
     };

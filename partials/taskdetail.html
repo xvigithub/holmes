@@ -1,5 +1,33 @@
-﻿<div style="border: 1px solid gray">
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li style="padding-left: 10px;">
+                <button class="btn btn-info"><i class="icon-th-large"></i></button>
+            </li>
+        </ul>
+        <ul class="nav pull-right">
+            <li style="padding-right: 10px;">
+                <button class="btn btn-info" ng-click="back()"><i class="icon-chevron-left"></i></button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br />
+<div style="border-bottom: 1px solid gray; padding-top: 30px; background-color: lightcyan">
     <h1>{{selectedTask.applicantName}}</h1>
     <h3>{{selectedTask.address}}</h3>
 </div>
-<button class="btn btn-primary" ng-click="back()">Back</button>
+<br />
+<button style="width: 100%;" class="btn btn-warning" ng-click="start()">START</button>
+
+<div id="myModal" class="modal hide fade">
+    <div class="modal-header">
+        <h2>Holmes!</h2>
+    </div>
+    <div class="modal-body">
+        <h3>Welcome!</h3>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
